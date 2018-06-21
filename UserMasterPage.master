@@ -1,0 +1,181 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="UserMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>TrainTheTrainee</title>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Coaching Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Hind:400,300' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+<!--google fonts-->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+	    jQuery(document).ready(function ($) {
+	        $(".scroll").click(function (event) {
+	            event.preventDefault();
+	            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+	        });
+	    });
+</script>
+<!-- //end-smoth-scrolling -->
+<!-- animated-css -->
+		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="js/wow.min.js"></script>
+		<script>
+		    new WOW().init();
+		</script>
+<!-- animated-css -->
+<script src="js/bootstrap.min.js"></script>
+<link href="css/galleryeffect.css" rel="stylesheet" type="text/css" media="all" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <form id="form2" runat="server">
+      <!--banner start here 
+<div class="banner" id="home">
+	<div class="container">
+		<div class="banner-main wow bounceInDown" data-wow-delay="0.2s">
+	        <h1>Train The Trainee</h1>
+	         <span class="bann-line"> </span>
+	         <p>Train Your Self....</p>
+	           <a href="#about" class="scroll"><span class="mover"> </span></a>
+		</div>
+	</div>
+</div>
+<!--banner start here-->
+<!--header start here-->
+	<!-- NAVBAR
+		================================================== -->
+<div class="header">
+	<div class="fixed-header">	
+		    <div class="navbar-wrapper">
+		      <div class="container">
+		        <nav class="navbar navbar-inverse navbar-static-top">
+		             <div class="navbar-header">
+			              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			                <span class="sr-only">Toggle navigation</span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			              </button>
+			              <div class="logo wow slideInLeft" data-wow-delay="0.2s">
+			                    <a class="navbar-brand" href="Default.aspx"><img src="images/logo.png" /></a>
+			              </div>
+			          </div>
+		            <div id="navbar" class="navbar-collapse collapse">
+		            <nav class="cl-effect-1">
+		              <ul class="nav navbar-nav">
+                          <li><a href="Login.aspx" class="lb-close">Login</a></li>
+						  <li><a href="Registration.aspx" class="lb-close">Registration</a></li>
+                           <li><a href="Trainers.aspx" class="lb-close">Trainers</a></li>
+						  <li><a href="Cources.aspx" class="lb-close">Courses</a></li>
+                          <li><a href="AboutUs.aspx" class="lb-close">About</a></li>
+						  <li><a href="ContactUs.aspx" class="lb-close">Contact</a></li>						
+		              </ul>
+		            </nav>
+		            <!-- script-for sticky-nav -->
+		<script>
+		    $(document).ready(function () {
+		        var navoffeset = $(".header").offset().top;
+		        $(window).scroll(function () {
+		            var scrollpos = $(window).scrollTop();
+		            if (scrollpos >= navoffeset) {
+		                $(".header").addClass("fixed");
+		            } else {
+		                $(".header").removeClass("fixed");
+		            }
+		        });
+
+		    });
+		</script>
+		<!-- /script-for sticky-nav -->
+
+		            </div>
+		            <div class="clearfix"> </div>
+		             </nav>
+		          </div>
+		           <div class="clearfix"> </div>
+		    </div>
+	 </div>
+</div>
+<!--header end here-->
+      <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+          <!--footer start here-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-main">
+			<div class="col-md-4 ftr-grid wow zoomIn" data-wow-delay="0.2s">
+				<h3>Train The Trainee</h3>
+				<span class="ftr-line"> </span>
+				<p>"Trainee's Success will reflect on our Success."</p>
+				<p> ~ Team TrainTheTrainee. </p>
+			</div>
+			<div class="col-md-4 ftr-grid ftr-mid wow zoomIn" data-wow-delay="0.2s">
+				 <h3>Social Media</h3>
+				 <span class="ftr-line flm"> </span>
+				 <ul >
+				 	<li><a href="#"><span class="fa"> </span></a></li>
+				 	<li><a href="#"><span class="tw"> </span></a></li>
+				 	<li><a href="#"><span class="gmail"> </span></a></li>
+				 </ul>
+			</div>
+			<div class="col-md-4 ftr-grid ftr-rit wow zoomIn" data-wow-delay="0.2s">
+				 <h3>Address</h3>
+				 <span class="ftr-line flr"> </span>
+				 <p>Nowrosjee Wadia College</p>
+				 <p> in Pune</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--footer end here-->
+<!--copy rights start here-->
+<div class="copy-right">
+	<div class="container">
+		 <div class="copy-rights-main wow zoomIn" data-wow-delay="0.2s">
+    	    <p>© 2017 TrainTheTrainee. All Rights Reserved | Design by  <a href="http://www.ttt.in" target="_blank">www.ttt.in</a> </p>
+    	 </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+            };
+            */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+									</script>
+						<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</div>
+<!--copy rights end here-->
+</body>
+</html>
